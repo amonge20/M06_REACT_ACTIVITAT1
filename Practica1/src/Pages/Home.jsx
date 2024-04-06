@@ -1,8 +1,9 @@
 import React from "react";
+import '../styles/Home.css';
 
 const Home = () => {
     return (
-      <div>
+      <div className="contingutPagina">
         <h1 style={{ textAlign: 'center' }}>Home: IticBCN</h1><h2> Esto es una prueba de del primer proyecto de JavaScript</h2>
         <h1 style={{ color: 'blue', fontSize: '24px' }}>¿Que es El react?</h1>
         <h3> React es una de les llibreries més populars de JavaScript. Així per desenvolupar

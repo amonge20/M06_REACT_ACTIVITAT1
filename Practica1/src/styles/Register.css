@@ -1,0 +1,57 @@
+.Registro {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Registro h1 {
+  margin-top: 0;
+  margin-bottom: 20px; 
+  font-size: 24px;
+}
+
+.Registro form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Registro .Correo,
+.Registro .Contrasenya {
+  margin-bottom: 15px;
+}
+
+.Registro label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Registro input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Registro button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.Registro button:hover {
+  background-color: #0056b3;
+}

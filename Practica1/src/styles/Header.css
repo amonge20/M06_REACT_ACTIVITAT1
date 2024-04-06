@@ -1,11 +1,17 @@
 .header {
     background-color: #FFFF74;
     color: #fff;
-    margin-top: -24%;
-    margin-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
   }
   
   .header a {
     color: #fff;
     text-decoration: none;
+    line-height: 64px;
+    padding: 0 20px;
   }
