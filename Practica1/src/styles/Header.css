@@ -1,0 +1,11 @@
+.header {
+    background-color: #FFFF74;
+    color: #fff;
+    margin-top: -24%;
+    margin-bottom: 15px;
+  }
+  
+  .header a {
+    color: #fff;
+    text-decoration: none;
+  }

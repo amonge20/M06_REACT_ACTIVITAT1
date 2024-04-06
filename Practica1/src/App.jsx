@@ -1,21 +1,27 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
-import CustomHeader from './components/nav/Header'; 
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home';
-import Register from './Pages/Auth/Register';
 import Login from './Pages/Auth/Login';
+import Register from './Pages/Auth/Register';
+import Header from './components/nav/Header';
 
-const App = () => {
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Header />}>
+      <Route index element={<Home />} />
+      <Route path="login" element={<Login />} />
+      <Route path="register" element={<Register />} />
+    </Route>
+  )
+)
+
+function App({routes}) {
+
   return (
-    <BrowserRouter>
-      <CustomHeader />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <RouterProvider router={router}/>
+    </>
   );
-};
+}
 
-export default App
+export default App;
